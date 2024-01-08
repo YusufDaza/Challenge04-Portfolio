@@ -2,58 +2,81 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
 #quiz-container {
     max-width: 600px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
 
 header {
+    background-color: #333;
+    color: #fff;
     text-align: center;
+    padding: 10px;
 }
 
-h1 {
-    color: #333;
+#timer, #question, #choices, #score-input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
 }
 
-#timer {
-    text-align: right;
-    font-size: 18px;
+#choices .choice {
+    display: block;
+    width: 100%;
     margin-bottom: 10px;
-}
-
-#question {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-#choices {
-    display: flex;
-    flex-direction: column;
-}
-
-button {
     padding: 10px;
     font-size: 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
+#choices .choice:hover {
+    background-color: #f5f5f5;
 }
 
-#score-input {
-    margin-top: 20px;
+#submit-btn, #save-score-btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
 }
 
-/* Add additional styling as needed */
+#submit-btn:hover, #save-score-btn:hover {
+    background-color: #45a049;
+}
+
+#submit-btn {
+    display: block;
+    margin: 0 auto;
+}
+
+#score-input input, #score-input button {
+    margin-top: 10px;
+    display: block;
+}
+
+.feedback {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    background-color: #4caf50; 
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}

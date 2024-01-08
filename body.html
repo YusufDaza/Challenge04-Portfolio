@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file here -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <div id="quiz-container">
         <header>
             <h1>Code Quiz</h1>
         </header>
-        
+
         <section id="timer">
-            <!-- Timer display goes here -->
+
+            Time: <span id="time-left">60s</span>
         </section>
 
         <section id="question">
-            <!-- Question display goes here -->
+            <p>Question 1: What keyword is used to declare a variable in JavaScript?</p>
         </section>
 
         <section id="choices">
-            <!-- Answer choices go here -->
+
+            <button class="choice">let</button>
+            <button class="choice">const</button>
+            <button class="choice">var</button>
+            <button class="choice">declare</button>
         </section>
 
         <button id="submit-btn">Submit</button>
-        
+
         <section id="score-input" style="display:none;">
-            <!-- Save initials and score input goes here -->
+
+            <label for="initials">Enter your initials:</label>
+            <input type="text" id="initials" maxlength="3" placeholder="ABC">
+            <button id="save-score-btn">Save Score</button>
         </section>
     </div>
 
-    <script src="script.js"></script> <!-- Link your JavaScript file here -->
+    <script src="script.js"></script>
 </body>
+
 </html>
