@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body style="background-color: lightblue">
 
     <div id="quiz-container">
         <header>
@@ -16,33 +16,35 @@
         </header>
 
         <section id="timer">
-
             Time: <span id="time-left">60s</span>
         </section>
 
-        <section id="question">
-            <p>Question 1: What keyword is used to declare a variable in JavaScript?</p>
+        <section id="introduction">
+            <p>
+                Welcome to the JavaScript Fundamentals Quiz! Test your knowledge of basic JavaScript concepts and
+                syntax. Are you ready to showcase your coding skills?
+            </p>
+            <button id="submit-btn">Submit</button>
         </section>
 
-        <section id="choices">
+        <section id="question-sections" class="hide">
+            <section id="question">
+                <p></p>
+            </section>
 
-            <button class="choice">let</button>
-            <button class="choice">const</button>
-            <button class="choice">var</button>
-            <button class="choice">declare</button>
+            <section id="choices"></section>
         </section>
-
-        <button id="submit-btn">Submit</button>
 
         <section id="score-input" style="display:none;">
-
             <label for="initials">Enter your initials:</label>
             <input type="text" id="initials" maxlength="3" placeholder="ABC">
             <button id="save-score-btn">Save Score</button>
         </section>
+
+        <section id="results" style="display:none;"></section>
     </div>
 
-    <script src="script.js"></script>
+    <script src="quiz.js"></script>
 </body>
 
 </html>
