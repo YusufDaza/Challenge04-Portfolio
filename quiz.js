@@ -10,29 +10,44 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const questions = [
         {
-            question: "What keyword is used to declare a variable in JavaScript?",
-            choices: ["let", "const", "var", "declare"],
-            correctAnswer: "let"
+            question: "Who won the first UEFA Euro held in 1960?",
+            choices: ["West Germany", "Soviet Union", "Italy", "Spain"],
+            correctAnswer: "Soviet Union"
         },
         {
-            question: "Which of the following is a front-end framework?",
-            choices: ["Node.js", "React", "Express", "Django"],
-            correctAnswer: "React"
+            question: "Which player holds the record for the most goals scored in a single UEFA Euro tournament?",
+            choices: ["Michel Platini", "Marco Van Basten", "Cristiano Ronaldo", "Zinedine Zidane"],
+            correctAnswer: "Michel Platini"
         },
         {
-            question: "What is the purpose of the 'typeof' operator in JavaScript?",
-            choices: ["To check the type of a variable", "To declare a variable", "To create a loop", "To define a function"],
-            correctAnswer: "To check the type of a variable"
+            question: "Which city hosted the UEFA Euro final in 2020?",
+            choices: ["Budapest", "Rome", "Munich", "London"],
+            correctAnswer: "London"
         },
         {
-            question: "What is a closure in JavaScript?",
-            choices: ["A way to close a browser window", "A function combined with its lexical scope", "A method to hide code", "A data structure"],
-            correctAnswer: "A function combined with its lexical scope"
+            question: "Which player scored the winning goal in the UEFA Euro final in 2004?",
+            choices: ["Cristiano Ronaldo", "Theodorakis Zagorakis", "Angelos Charisteas", "Rui Costa"],
+            correctAnswer: "Angelos Charisteas"
         },
         {
-            question: "Which method is used to remove the last element from an array in JavaScript?",
-            choices: ["pop()", "remove()", "delete()", "shift()"],
-            correctAnswer: "pop()"
+            question: "Who won the UEFA Euro Golden Boot award in 2016?",
+            choices: ["Gareth Bale", "Antoine Griezmann", "Robert Lewandowski", "Luka Modric"],
+            correctAnswer: "Antoine Griezmann"
+        },
+        {
+            question: "Which of the following countries did not qualify to the UEFA Euro 2000?",
+            choices: ["Turkey", "Romania", "England", "Croatia"],
+            correctAnswer: "Croatia"
+        },
+        {
+            question: "Which country Denmark replaced and participated in the UEFA Euro in 1992?",
+            choices: ["Yugoslavia", "Spain", "Portugal", "Bulgaria"],
+            correctAnswer: "Yugoslavia"
+        },
+        {
+            question: "Who scored the last Golden Goal of the history of UEFA Euro in the 2000's final?",
+            choices: ["Zinedine Zidane", "Lilian Thuram", "Didier Deschamps", "David Trezeguet"],
+            correctAnswer: "David Trezeguet"
         },
     ];
 
@@ -96,12 +111,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         showFeedback(isCorrect);
 
-        if (isCorrect) {
-            score += 10;
-        } else {
-            timeLeft -= 10;
-        }
-
         if (currentQuestionIndex < questions.length - 1) {
             currentQuestionIndex++;
             displayQuestion();
@@ -150,7 +159,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 currentQuestionIndex = 0;
                 timeLeft = 60;
                 clearInterval(timer);
-                startQuiz();
+
+                window.location.href = "/C:/Users/josep/OneDrive/Desktop/bootcamp/Challenges/Challenge04-Portfolio/Challenge04-Portfolio/index.html";
             });
         });
     }

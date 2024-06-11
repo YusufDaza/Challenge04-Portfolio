@@ -20,6 +20,7 @@ Click the "Start Quiz" button to begin the quiz. Answer each question within the
 
 ## Live Link
 
+[JavaScript Fundamental Quiz](https://yusufdaza.github.io/Challenge04-Portfolio/)
 
 ## Credits
 

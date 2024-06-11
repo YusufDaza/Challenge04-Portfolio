@@ -45,7 +45,7 @@ h1 {
 .choice {
     padding: 10px;
     font-size: 16px;
-    background-color: #4caf50;
+    background-color: royalblue;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -54,7 +54,7 @@ h1 {
 }
 
 .choice:hover {
-    background-color: #45a049;
+    background-color: rgb(112, 198, 227);
 }
 
 #submit-btn {
@@ -90,7 +90,7 @@ label {
 #save-score-btn {
     padding: 10px;
     font-size: 16px;
-    background-color: #4caf50;
+    background-color: royalblue;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -99,5 +99,5 @@ label {
 }
 
 #save-score-btn:hover {
-    background-color: #45a049;
+    background-color: royalblue;
 }
