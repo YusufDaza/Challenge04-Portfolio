@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 timeLeft = 60;
                 clearInterval(timer);
 
-                window.location.href = "C:/Users/josep/OneDrive/Desktop/bootcamp/Challenges/Challenge04-Portfolio/Challenge04-Portfolio/index.html";
+                window.location.href = "/C:/Users/josep/OneDrive/Desktop/bootcamp/Challenges/Challenge04-Portfolio/Challenge04-Portfolio/index.html";
             });
         });
     }
