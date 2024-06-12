@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 timeLeft = 60;
                 clearInterval(timer);
 
-                window.location.href = "https://yusufdaza.github.io/Challenge04-Portfolio/";
+                window.location.href = location.origin + "/C:/Users/josep/OneDrive/Desktop/bootcamp/Challenges/Challenge04-Portfolio/Challenge04-Portfolio/index.html";
             });
         });
     }
