@@ -49,6 +49,16 @@ document.addEventListener("DOMContentLoaded", function () {
             choices: ["Zinedine Zidane", "Lilian Thuram", "Didier Deschamps", "David Trezeguet"],
             correctAnswer: "David Trezeguet"
         },
+        {
+            question: "Which country won the UEFA Euro of 1976?",
+            choices: ["Netherlands", "Yugoslavia", "Czechoslovakia", "West Germany"],
+            correctAnswer: "Czechoslovakia"
+        },
+        {
+            question: "What countries hosted the UEFA Euro 2008?",
+            choices: ["Austria & Swizertland", "Poland & Ukraine", "Greece & Turkey", "Belgium & Netherlands"],
+            correctAnswer: "Austria & Switzerland"
+        },
     ];
 
     let currentQuestionIndex = 0;
@@ -108,6 +118,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const selectedAnswer = currentQuestion.choices[selectedAnswerIndex];
         const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
+
+        if (isCorrect) {
+            score += 10; 
+        }
 
         showFeedback(isCorrect);
 
